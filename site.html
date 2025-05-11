@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Fiction</title>
+    <link rel="stylesheet" href="главная/footjob.css">
+    <link rel="Icon" type="png" href="иконки/logo1.png">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="title-stripe"></div>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Foo<span>t</span> Fic<span>t</span>ion</h1>
+            </div>
+            
+            <div class="nav-wrapper">
+                <nav class="main-nav">
+                    <a href="site.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </nav>
+                
+                <div class="icons">
+                    <div class="icon cart-icon" title="Корзина"><a href="basket.html" class="icon-img">
+                        <img src="иконки/basket.png" width=45 height=45>
+                    </a></div>
+                    <div class="icon user-icon" title="Профиль" id="profileBtn">
+                        <a href="#" class="icon-img">
+                            <img src="иконки/user.png" width=53 height=53>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Новая коллекция товаров</h2>
+            <p>Посмотрите новые позиции в магазине</p>
+            <a href="#new" class="btn">Смотреть новинки</a>
+        </div>
+    </section>
+
+    <div class="content-container">   
+        <section class="brands">
+            <div class="brands-container">
+                <div class="brands-track" id="brandsTrack"></div>
+            </div>
+        </section>
+    
+        <section class="small-banner">
+            <div class="slider-container">
+                <span id="slide1"></span>
+                <span id="slide2"></span>
+                <span id="slide3"></span>
+                <div class="slider">
+                    <div class="slide"><img src="главная/баннеры/dop1.png" alt="Баннер 1"></div>
+                    <div class="slide"><img src="главная/баннеры/dop2.png" alt="Баннер 2"></div>
+                    <div class="slide"><img src="главная/баннеры/dop3.png" alt="Баннер 3"></div>
+                </div>
+            </div>
+        </section>
+        
+        <h3>Новинки</h3>
+        <section class="catalog" id="new">
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/новинки/PUMA LaMelo Ball LaFrancé Amour Moment.png" alt="PUMA LaMelo Ball LaFrancé Amour Moment" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">PUMA LaMelo Ball LaFrancé Amour Moment</div>
+                        <div class="product-price">20,999 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/новинки/Nike Shox Ride 2 Sp Supreme Olive.png" alt="Nike Shox Ride 2 Sp Supreme Olive" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Nike Shox Ride 2 Sp Supreme Olive</div>
+                        <div class="product-price">90,999 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/новинки/OFF WHITE Out Of Office Low 'For Walking' White Black.png" alt="OFF WHITE Out Of Office Low 'For Walking' White Black" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">OFF WHITE Out Of Office Low 'For Walking' White Black</div>
+                        <div class="product-price">74,999 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/новинки/PUMA Inhale Og A$AP Rocky Distressed Pack Alpine Snow.png" alt="PUMA Inhale Og A$AP Rocky Distressed Pack Alpine Snow" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">PUMA Inhale Og A$AP Rocky Distressed Pack Alpine Snow</div>
+                        <div class="product-price">40,999 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/новинки/Lanvin Leather Curb White Ivory.png" alt="Lanvin Leather Curb White Ivory" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Lanvin Leather Curb White Ivory</div>
+                        <div class="product-price">61,999 ₽</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    <div class="notification" id="notification">Товар добавлен в корзину</div> 
+    <div class="notification-like" id="notification-like">Товар добавлен в отложенное</div> 
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Магазин</h4>
+                <ul>
+                    <li><a href="site.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Помощь</h4>
+                <ul>
+                    <li>Доставка и оплата</li>
+                    <li>Возврат</li>
+                    <li>Таблица размеров</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Компания</h4>
+                <ul>
+                    <li>О нас</li>
+                    <li>Блог</li>
+                    <li>Магазины</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>Общага №2</li>
+                    <li>+7 (495) 123-45-67</li>
+                    <li>footfiction@mail.ru</li>
+                </ul>
+                <div class="social-links">
+                    <img src="главная/brands/inst.png" alt="Instagram">
+                    <img src="главная/brands/vk.png" alt="VK">
+                    <img src="главная/brands/tg.png" alt="Telegram">
+                    <img src="главная/brands/whatsapp.png" alt="WhatsApp">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Foot Fiction. Все права защищены.</p>
+        </div>
+    </footer>
+        <!-- окно профиля -->
+    <div class="profile-modal" id="profileModal">
+        <span class="close" id="closeBtn">&times;</span>
+        <div class="profile-header">
+            <img src="иконки/user.png" alt="Профиль" class="profile-icon">
+            <div class="profile-info">
+                <div class="profile-name">Naggets</div>
+                <div class="profile-email">shdie@mail.ru</div>
+                <div class="profile-location">г. Чита</div>
+            </div>
+        </div>
+        <ul class="profile-links">
+            <li>
+                <img src="иконки/backs.png" alt="Способы оплаты" class="icon-img">
+                <a href="#">Способы оплаты</a>
+            </li>
+            <li>
+                <img src="иконки/basket.png" alt="Корзина" class="icon-img">
+                <a href="basket.html">Корзина</a>
+            </li>
+            <li>
+                <img src="иконки/like.png" alt="Отложенное" class="icon-img">
+                <a href="#">Отложенное</a>
+            </li>
+            <li>
+                <img src="иконки/user.png" alt="Редактировать профиль" class="icon-img">
+                <a href="#">Редактировать профиль</a>
+            </li>
+        </ul>
+        <div class="profile-actions">
+            <button class="profile-btn" id="logoutBtn">Выйти</button>
+            <a href="profile.html" class="profile-btn" id="registerBtn">Регистрация</a>
+        </div>
+    </div>
+    <script src="главная/pyatki.js"></script>
+</body>
+</html>

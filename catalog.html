@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Fiction</title>
+    <link rel="stylesheet" href="каталог/catalog.css">
+    <link rel="Icon" type="png" href="иконки/logo1.png">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="title-stripe"></div>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Foo<span>t</span> Fic<span>t</span>ion</h1>
+            </div>
+            <div class="nav-wrapper">
+                <nav class="main-nav">
+                    <a href="site.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </nav>
+                
+                <div class="icons">
+                    <div class="icon cart-icon" title="Корзина"><a href="basket.html" class="icon-img">
+                        <img src="иконки/basket.png" width=48 height=45>
+                    </a></div>
+                    <div class="icon user-icon" title="Профиль" id="profileBtn">
+                        <a href="#" class="icon-img">
+                            <img src="иконки/user.png" width=53 height=53>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="brands-container">
+        <div class="brands-scroller">
+            <div class="brands">
+                <a class="brand" href="#asics">Asics</a>
+                <a class="brand" href="#puma">Puma</a>
+                <a class="brand" href="#nike">Nike</a>
+                <a class="brand" href="#">Jordan</a>
+                <a class="brand" href="#">Rick Owens</a>
+                <a class="brand" href="#adidas">Adidas</a>
+                <a class="brand" href="#reebok">Reebok</a>
+                <a class="brand" href="#onitsuka">Onitsuka Tiger</a>
+                <a class="brand" href="#timber">Timberland</a>
+                <a class="brand" href="#">Maison Margiela</a>
+                <a class="brand" href="#">Lanvin</a>
+                <a class="brand" href="#">FILA</a>
+                <a class="brand" href="#">Oakley</a>
+                <a class="brand" href="#">Salomon</a>
+                <a class="brand" href="#">New Balance</a>
+                <a class="brand" href="#">Mihara Yasuhiro</a>
+                <a class="brand" href="#">OFF WHITE</a>
+                <a class="brand" href="#asics">Asics</a>
+                <a class="brand" href="#puma">Puma</a>
+                <a class="brand" href="#nike">Nike</a>
+                <a class="brand" href="#">Jordan</a>
+                <a class="brand" href="#">Rick Owens</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <aside class="filters">
+            <div class="filter-section">
+                <div class="filter-title">РАЗМЕР</div>
+                <div class="size-options">
+                    <div class="size-option">36</div>
+                    <div class="size-option">37</div>
+                    <div class="size-option">38</div>
+                    <div class="size-option">39</div>
+                    <div class="size-option">40</div>
+                    <div class="size-option">41</div>
+                    <div class="size-option">42</div>
+                    <div class="size-option">43</div>
+                    <div class="size-option">44</div>
+                    <div class="size-option">45</div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">ЦВЕТ</div>
+                <div class="color-options">
+                    <div class="color-option" style="background-color: #000;"></div>
+                    <div class="color-option" style="background-color: #fff;"></div>
+                    <div class="color-option" style="background-color: #f00;"></div>
+                    <div class="color-option" style="background-color: #00f;"></div>
+                    <div class="color-option" style="background-color: #0f0;"></div>
+                    <div class="color-option" style="background-color: #ff0;"></div>
+                    <div class="color-option" style="background-color: #f80;"></div>
+                    <div class="color-option" style="background-color: #808080;"></div>
+                    <div class="color-option" style="background-color: #ff1493;"></div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">ЦЕНА</div>
+                <input type="range" min="0" max="50000" value="25000" class="price-slider" step="1000" id="priceRange">
+                <div class="price-inputs">
+                    <input type="number" min="0" max="50000" class="price-input min-price" placeholder="От" value="0">
+                    <input type="number" min="0" max="50000" class="price-input max-price" placeholder="До" value="50000">
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">МАТЕРИАЛ ОБУВИ</div>
+                <div class="material-filter">
+                  <label>
+                    <input type="checkbox" name="material" value="leather" checked> Кожа
+                  </label>
+                  <label>
+                    <input type="checkbox" name="material" value="textile" checked> Текстиль
+                  </label>
+                  <label>
+                    <input type="checkbox" name="material" value="synthetics" checked> Ткань
+                  </label>
+                  <label>
+                    <input type="checkbox" name="material" value="rubber" checked> Резина
+                  </label>
+                  <label>
+                    <input type="checkbox" name="material" value="suede" checked> Замша
+                  </label>
+                </div>
+              </div>
+        </aside>
+        
+        <main class="products">
+            <section class="brand-section">
+                <h2 class="brand-title" id="nike">NIKE</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/nike/Nike Air Max 95.png" alt="Nike Air Max 95" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Nike Air Max 95</div>
+                            <div class="product-price">24,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/nike/Кеды Nike Court Vision Low Next Nature.png" alt="Nike Court Vision" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Nike Court Vision Low Next Nature</div>
+                            <div class="product-price">9,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/nike/Nike P-6000.png" alt="Nike P-6000" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Nike P-6000</div>
+                            <div class="product-price">14,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/nike/Nike AIR VAPORMAX PLUS 'WOLF GREY'.png" alt="Nike AIR VAPORMAX PLU" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Nike Air VaporMax Plus</div>
+                            <div class="product-price">30,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/nike/Nike Air Max 98.png" alt="Nike Air Max 98" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Nike Air Max 98</div>
+                            <div class="product-price">40,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/nike/Nike Skepta x Air Max Tailwind 5 'Bright Blue'.png" alt="Nike Skepta x Air Max Tailwind" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Nike Air Max Tailwind 5 Skepta</div>
+                            <div class="product-price">34,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                </div>
+            </section>
+            
+            <section class="brand-section">
+                <h2 class="brand-title" id="adidas">ADIDAS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/adidas/Adidas Superstar Ripple No Sleep Rave Club.png" alt="Adidas Superstar" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Adidas Superstar Ripple No Sleep Rave Club</div>
+                            <div class="product-price">24,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/adidas/Adidas Forum 84 Low.png" alt="Adidas Forum 84" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Adidas Forum 84</div>
+                            <div class="product-price">20,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/adidas/Adidas Forum Hi Wings 4.0.png" alt="Adidas Forum Hi Wings" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Adidas Originals Forum Hi Wings 4.0 Jeremy Scott</div>
+                            <div class="product-price">26,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/adidas/Samba Women's Adidas Originals Og 'Black Floral Embroidery'.png" alt="Adidas Forum Hi Wings" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Adidas Samba Originals Og</div>
+                            <div class="product-price">17,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/adidas/Superstar Melting Sadness X Adidas Originals.png" alt="Superstar Melting Sadness X Adidas Originals" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Superstar Melting Sadness X Adidas Originals</div>
+                            <div class="product-price">21,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/adidas/Adidas Originals Sambarose Valentine's Day.png" alt="Adidas Originals Sambarose Valentine's Day" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Adidas Originals Sambarose Valentine's Day</div>
+                            <div class="product-price">17,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <h2 class="brand-title" id="puma">PUMA</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/puma/PUMA Forever Skepta Black Iridescent.png" alt="PUMA Forever Skepta" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">PUMA Forever Skepta Black Iridescent</div>
+                            <div class="product-price">41,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div> 
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/puma/PUMA Inhale Og A$AP Rocky Distressed Pack.png" alt="PUMA Inhale Og A$AP Rocky Distressed Pack" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">PUMA Inhale Og A$AP Rocky Distressed Pack</div>
+                            <div class="product-price">40,499 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>   
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/puma/PUMA LaMelo Ball LaFrancé Amour Red.png" alt="PUMA LaMelo Ball LaFrancé Amour Redм" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">PUMA LaMelo Ball LaFrancé Amour</div>
+                            <div class="product-price">27,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>   
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/puma/PUMA Speedcat Og Red White.png" alt="PUMA Speedcat Og Red White" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">PUMA Speedcat Og</div>
+                            <div class="product-price">13,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>   
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/puma/PUMA Teveris Nitro.png" alt="PUMA Teveris Nitro" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">PUMA Teveris Nitro</div>
+                            <div class="product-price">12,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>   
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/puma/PUMA Redon Bungee.png" alt="PUMA Redon Bungee" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">PUMA Redon Bungee</div>
+                            <div class="product-price">14,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <h2 class="brand-title" id="reebok">REEBOK</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/reebok/ES22 Reebok 'Big Game'.png" alt="ES22 Reebok 'Big Game'" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">ES22 Reebok 'Big Game' </div>
+                            <div class="product-price">23,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/reebok/Reebok Club C Revenge Vintage 'Vintage Chalk Harmony Green' Women's.png" alt="Reebok Club C Revenge Vintage 'Vintage Chalk Harmony Green' Women's" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Reebok Club C Revenge Vintage 'Vintage Chalk' </div>
+                            <div class="product-price">10,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/reebok/Reebok Question Mid Denver Nuggets.png" alt="Reebok Question Mid Denver Nuggets" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Reebok Question Mid Denver Nuggets </div>
+                            <div class="product-price">17,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/reebok/Reebok Classic Leather Tabi Project 0 Cl Maison Margiela.png" alt="Reebok Classic Leather Tabi Project 0 Cl Maison Margiela" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Reebok Classic Leather Tabi Project 0 Cl Maison Margiela</div>
+                            <div class="product-price">51,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/reebok/Reebok Hurrikaze Ii Mid Looney Tunes Taz.png" alt="Reebok Hurrikaze Ii Mid Looney Tunes Taz" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Reebok Hurrikaze Ii Mid Looney Tunes Taz</div>
+                            <div class="product-price">24,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/reebok/Reebok Shaqnosis Solar Pink.png" alt="Reebok Shaqnosis Solar Pink" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Reebok Shaqnosis Solar Pink</div>
+                            <div class="product-price">15,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <h2 class="brand-title" id="asics">ASICS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/asics/Asics Gel Kahana Tr V2.png" alt="Asics Gel Kahana Tr V2" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Asics Gel Kahana Tr V2</div>
+                            <div class="product-price">20,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/asics/Asics Gel Nimbus 9.png" alt="Asics Gel Nimbus 9" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Asics Gel Nimbus 9</div>
+                            <div class="product-price">24,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/asics/KITH x Asics Gel Kayano Slip Resistant Breathable Low.png" alt="KITH x Asics Gel Kayano Slip Resistant Breathable Low" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">KITH x Asics Gel Kayano Slip Resistant Breathable Low</div>
+                            <div class="product-price">44,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/asics/Asics Gel Quantum Kinetic.png" alt="Asics Gel Quantum Kinetic" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Asics Gel Quantum Kinetic</div>
+                            <div class="product-price">23,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/asics/Asics UB8 S GT 2160.png" alt="Asics UB8 S GT 2160" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Asics UB8 S GT 2160</div>
+                            <div class="product-price">35,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/asics/Asics Gel Nandi 360.png" alt="Asics Gel Nandi 360" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Asics Gel Nandi 360</div>
+                            <div class="product-price">19,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <h2 class="brand-title" id="timber">TIMBERLAND</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/timberland/Timberland BAPE x Chukka Classic Boot Wide Wheat.png" alt="Timberland BAPE x Chukka Classic Boot Wide Wheat" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Timberland BAPE x Chukka Classic Boot Wide Wheat</div>
+                            <div class="product-price">56,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/timberland/Timberland PREMIUM Ankle Boots.png" alt="Timberland PREMIUM Ankle Boots" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Timberland PREMIUM Ankle Boots</div>
+                            <div class="product-price">40,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/timberland/Timberland Lunar New Year 6 Inch Lace Up Boots 'Black Nubuck'.png" alt="Timberland Lunar New Year" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Timberland Lunar New Year 6 Inch Lace Up Boots</div>
+                            <div class="product-price">31,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/timberland/Timberland Outdoor Boots Men Wheat.png" alt="Timberland Outdoor" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Timberland Outdoor Boots Men Wheat</div>
+                            <div class="product-price">31,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/timberland/Timberland Premium 6 Inch Waterproof Boots 'Dark Grey'.png" alt="Timberland Premium 6 Inch Waterproof" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Timberland Premium 6 Inch Waterproof Boots 'Dark Grey'</div>
+                            <div class="product-price">23,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/timberland/Timberland 6' Boot Just Don Denim.png" alt="Timberland 6' Boot Just Don" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Timberland 6' Boot Just Don Denim</div>
+                            <div class="product-price">28,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <h2 class="brand-title" id="onitsuka">ONITSUKA TIGER</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/onitsuka/Onitsuka Tiger MEXICO 66 Non slip Lightweight Low.png" alt="Onitsuka Tiger MEXICO 66 Non slip" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Onitsuka Tiger MEXICO 66 Non slip</div>
+                            <div class="product-price">11,499 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/onitsuka/Onitsuka Tiger Mexico 66 Slip On.png" alt="Onitsuka Tiger Mexico 66 Slip On" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Onitsuka Tiger Mexico 66 Slip On</div>
+                            <div class="product-price">17,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/onitsuka/Onitsuka Tiger Tokuten Anti Slip Wear Resistant Low.png" alt="Onitsuka Tiger Tokuten Anti Slip Wear Resistant Low" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Onitsuka Tiger Tokuten Anti Slip Wear Resistant Low</div>
+                            <div class="product-price">19,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/onitsuka/Onitsuka Tiger Mexico 66 'Silver Off White'.png" alt="Onitsuka Tiger Mexico 66" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Onitsuka Tiger Mexico 66</div>
+                            <div class="product-price">24,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/onitsuka/Onitsuka Tiger Mexico 66 SD Indigo Denim.png" alt="Onitsuka Tiger Mexico 66 SD Indigo Denim" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Onitsuka Tiger Mexico 66 SD Indigo Denim</div>
+                            <div class="product-price">21,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="кроссовки/onitsuka/Onitsuka Tiger Corsair Ex 'White Red'.png" alt="Onitsuka Tiger Corsair Ex" class="product-image">
+                            <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Onitsuka Tiger Corsair Ex</div>
+                            <div class="product-price">18,990 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>     
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="notification" id="notification">Товар добавлен в корзину</div> 
+    <div class="notification-like" id="notification-like">Товар добавлен в отложенное</div> 
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Магазин</h4>
+                <ul>
+                    <li><a href="site.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Помощь</h4>
+                <ul>
+                    <li>Доставка и оплата</li>
+                    <li>Возврат</li>
+                    <li>Таблица размеров</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Компания</h4>
+                <ul>
+                    <li>О нас</li>
+                    <li>Блог</li>
+                    <li>Магазины</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>Общага №2</li>
+                    <li>+7 (495) 123-45-67</li>
+                    <li>footfiction@mail.ru</li>
+                </ul>
+                <div class="social-links">
+                    <img src="главная/brands/inst.png" alt="Instagram">
+                    <img src="главная/brands/vk.png" alt="VK">
+                    <img src="главная/brands/tg.png" alt="Telegram">
+                    <img src="главная/brands/whatsapp.png" alt="WhatsApp">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Foot Fiction. Все права защищены.</p>
+        </div>
+    </footer>
+    <!-- окно профиля -->
+    <div class="profile-modal" id="profileModal">
+        <span class="close" id="closeBtn">&times;</span>
+        <div class="profile-header">
+            <img src="иконки/user.png" alt="Профиль" class="profile-icon">
+            <div class="profile-info">
+                <div class="profile-name">Naggets</div>
+                <div class="profile-email">hehe@mail.ru</div>
+                <div class="profile-location">г. Чита</div>
+            </div>
+        </div>
+        <ul class="profile-links">
+            <li>
+                <img src="иконки/backs.png" alt="Способы оплаты" class="icon-img">
+                <a href="#">Способы оплаты</a>
+            </li>
+            <li>
+                <img src="иконки/basket.png" alt="Корзина" class="icon-img">
+                <a href="basket.html">Корзина</a>
+            </li>
+            <li>
+                <img src="иконки/like.png" alt="Отложенное" class="icon-img">
+                <a href="#">Отложенное</a>
+            </li>
+            <li>
+                <img src="иконки/user.png" alt="Редактировать профиль" class="icon-img">
+                <a href="#">Редактировать профиль</a>
+            </li>
+        </ul>
+        <div class="profile-actions">
+            <button class="profile-btn" id="logoutBtn">Выйти</button>
+            <a href="profile.html" class="profile-btn" id="registerBtn">Регистрация</a>
+        </div>
+    </div>
+    <script src="каталог/catalog.js"></script>
+</body>
+</html>

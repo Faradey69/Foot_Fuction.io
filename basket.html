@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Fiction</title>
+    <link rel="stylesheet" href="корзина/basket.css">
+    <link rel="Icon" type="png" href="иконки/logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="title-stripe"></div>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Foo<span>t</span> Fic<span>t</span>ion</h1>
+            </div>
+            
+            <div class="nav-wrapper">
+                <nav class="main-nav">
+                    <a href="site.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </nav>
+                
+                <div class="icons">
+                    <div class="icon cart-icon" title="Корзина"><a href="basket.html" class="icon-img">
+                        <img src="иконки/basket.png" width=48 height=45>
+                    </a></div>
+                    <div class="icon user-icon" title="Профиль" id="profileBtn">
+                        <a href="#" class="icon-img">
+                            <img src="иконки/user.png" width=53 height=53>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="korzina">
+        <h2>Корзина</h2>
+        </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/reebok/Reebok Question Mid Denver Nuggets.png" alt="Reebok Question Mid Denver Nuggets" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Reebok Question Mid Denver Nuggets </div>
+                        <div class="product-specs">42</div>
+                        <div class="product-price">17,990 ₽</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity-value">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>                       
+                        </div>   
+                        <button class="remove">Убрать</button>               
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="кроссовки/puma/PUMA Forever Skepta Black Iridescent.png" alt="PUMA Forever Skepta" class="product-image">
+                        <img src="иконки/like.png" alt="Добавить в избранное" class="like-icon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">PUMA Forever Skepta Black Iridescent </div>
+                        <div class="product-specs">42</div>
+                        <div class="product-price">41,990 ₽</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity-value">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>                       
+                        </div>   
+                        <button class="remove">Убрать</button>               
+                    </div>
+                </div>       
+            </div>
+    
+        <div class="notification" id="notification">Товар удалён из корзины</div> 
+        <div class="notification-like" id="notification-like">Товар добавлен в отложенное</div> 
+        <div  class="cart-total">
+            <p>Итого: 59,980 ₽</p>
+        </div>
+            <button id="pay" class="pay">Оформить заказ</button>
+
+            <div id="paymentModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Оформление заказа</h2>
+                    
+                    <div class="section">
+                        <div class="section-title">Способ оплаты:</div>
+                        <div class="option">
+                            <input type="radio" id="card" name="payment" value="card" checked>
+                            <label for="card">Банковской картой</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="installments" name="payment" value="installments">
+                            <label for="installments">Долями <img src="корзина/долями.png" alt="dolyami" class="dolyami"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-title">Способ доставки:</div>
+                        <div class="option">
+                            <input type="radio" id="pickup" name="delivery" value="pickup" checked>
+                            <label for="pickup">Самовывоз</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="courier" name="delivery" value="courier">
+                            <label for="courier">Курьером</label>
+                        </div>
+                        <div id="addressField" class="address-field">
+                            <label for="address">Адрес доставки:</label>
+                            <input type="text" id="address" class="input-field" placeholder="Введите ваш адрес">
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-title">Промокод:</div>
+                        <input type="text" id="promoCode" class="input-field" placeholder="Введите промокод">
+                    </div>
+                    
+                    <button class="pay-btn">Оплатить</button>
+                </div>
+            </div>
+        </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Магазин</h4>
+                <ul>
+                    <li><a href="site.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Помощь</h4>
+                <ul>
+                    <li>Доставка и оплата</li>
+                    <li>Возврат</li>
+                    <li>Таблица размеров</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Компания</h4>
+                <ul>
+                    <li>О нас</li>
+                    <li>Блог</li>
+                    <li>Магазины</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>Общага №2</li>
+                    <li>+7 (495) 123-45-67</li>
+                    <li>footfiction@mail.ru</li>
+                </ul>
+                <div class="social-links">
+                    <img src="главная/brands/inst.png" alt="Instagram">
+                    <img src="главная/brands/vk.png" alt="VK">
+                    <img src="главная/brands/tg.png" alt="Telegram">
+                    <img src="главная/brands/whatsapp.png" alt="WhatsApp">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Foot Fiction. Все права защищены.</p>
+        </div>
+    </footer>
+    <!-- окно профиля -->
+    <div class="profile-modal" id="profileModal">
+        <span class="close1" id="closeBtn">&times;</span>
+        <div class="profile-header">
+            <img src="иконки/user.png" alt="Профиль" class="profile-icon">
+            <div class="profile-info">
+                <div class="profile-name">Naggets</div>
+                <div class="profile-email">shdie@mail.ru</div>
+                <div class="profile-location">г. Чита</div>
+            </div>
+        </div>
+        <ul class="profile-links">
+            <li>
+                <img src="иконки/backs.png" alt="Способы оплаты" class="icon-img">
+                <a href="#">Способы оплаты</a>
+            </li>
+            <li>
+                <img src="иконки/basket.png" alt="Корзина" class="icon-img">
+                <a href="basket.html">Корзина</a>
+            </li>
+            <li>
+                <img src="иконки/like.png" alt="Отложенное" class="icon-img">
+                <a href="#">Отложенное</a>
+            </li>
+            <li>
+                <img src="иконки/user.png" alt="Редактировать профиль" class="icon-img">
+                <a href="#">Редактировать профиль</a>
+            </li>
+        </ul>
+        <div class="profile-actions">
+            <button class="profile-btn" id="logoutBtn">Выйти</button>
+            <a href="profile.html" class="profile-btn" id="registerBtn">Регистрация</a>
+        </div>
+    </div>
+    <script src="корзина/basket.js"></script>
+
+</body>
+</html>
